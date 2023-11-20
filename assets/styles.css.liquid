@@ -169,14 +169,21 @@
 {%- assign type_highlight_font = settings.type_highlight_font -%}
 
 
-@font-face {
+/* @font-face {
   font-family: 'NeueWorld';
   src: url({{ "NeueWorld-ExtendedLight.eot" | asset_url }});
   src: 
   url({{ "NeueWorld-ExtendedLight.ttf" | asset_url }}) format("truetype"),
   url({{ "NeueWorld-ExtendedLight.woff" | asset_url }}) format("woff"),
   url({{ "NeueWorld-ExtendedLight.woff2" | asset_url }}) format("woff2");
-}
+} */
+
+@font-face {
+    font-family: "Neue-World-Extended-Light";
+    src: url("{{ 'NeueWorld-ExtendedLight.woff2' | asset_url }}") format("woff2"),
+    url('{{ "NeueWorld-ExtendedLight.woff" | asset_url }}') format("woff");
+    font-display: swap;
+  }
 
 @font-face {
     font-family: 'Neue World';
@@ -2737,7 +2744,7 @@ a {
 }
 
 h1, .h1-style, h2, h3, h4, h5, h6, .heading-font {
-    font-family: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+    font-family: 'Neue-World-Extended-Light', serif;
     font-weight: {{ heading_font.weight }};
     font-style: {{ heading_font.style }};
   color: {{ font_col_head }};
