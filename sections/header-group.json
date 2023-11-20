@@ -1,0 +1,65 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "1478526632860": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>",
+            "bg_col": "rgba(0,0,0,0)",
+            "text_col": "rgba(0,0,0,0)"
+          }
+        },
+        "1478526632861": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>",
+            "bg_col": "#1b73e8",
+            "text_col": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "1478526632860",
+        "1478526632861"
+      ],
+      "settings": {
+        "announcement_bar_col": "#3c4043",
+        "announcement_text_col": "#ffffff",
+        "message_font_size": 14,
+        "show_social_icons": true,
+        "menu": "",
+        "show_country_selector": true,
+        "show_language_selector": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo": "{{ shop.brand.logo }}",
+        "logo_img_width_int": 55,
+        "mobile_logo_img_width_int": 90,
+        "logo_h1": true,
+        "enable_sticky": true,
+        "menu_linklist": "main-menu",
+        "menu_linklist_mobile": "",
+        "menu_layout": "inline-menu-center",
+        "nav_featured_link": "Sale",
+        "enable_mobile_promo_carousel": true,
+        "enable_nav_mob_products": false,
+        "nav_mob_products_title": "Best Sellers",
+        "nav_mob_products_collection": "",
+        "enable_search": false,
+        "cart_icon": "bag",
+        "show_cart_icon_label": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

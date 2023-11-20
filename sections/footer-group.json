@@ -1,0 +1,49 @@
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "1601308717434": {
+          "type": "text",
+          "settings": {
+            "image_width": 150,
+            "show_social_icons": true,
+            "soc_icons_large": false
+          }
+        },
+        "1601308671932": {
+          "type": "menu",
+          "settings": {
+            "title": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "1601308656020": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Newsletter",
+            "button_style": "primary",
+            "show_social_icons": false,
+            "soc_icons_large": false
+          }
+        }
+      },
+      "block_order": [
+        "1601308717434",
+        "1601308671932",
+        "1601308656020"
+      ],
+      "settings": {
+        "lower_menu": "",
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_language_selector": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

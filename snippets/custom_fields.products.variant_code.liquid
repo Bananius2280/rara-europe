@@ -1,0 +1,16 @@
+<div class="variant-custom-fields-wrapper">
+  {% for variant in product.variants %}
+  <div class="variant-custom-fields" data-variant-id="{{ variant.id }}"><br />
+    <div class="variant__title"><strong>{{ variant.title }}</strong></div>
+    <div class="variant__cf">
+      {% for info in shop.metafields.custom_fields["variant_fields"] %}
+        {% if variant.metafields.custom_fields[info.key] !=blank %}
+          <div>
+            <strong>{{ info.label }}:</strong> {{ variant.metafields.custom_fields[info.key] }}
+      	  </div>
+    	{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

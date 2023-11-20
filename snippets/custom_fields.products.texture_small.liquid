@@ -1,0 +1,15 @@
+{% if product.metafields["custom_fields"]["texture_small"] != blank %}
+  <div class="custom-field custom-field__texture-small custom-field__type--image-repeater">
+    <h3 class="custom-field--title">Texture_small</h3>
+    <div class="custom-field--value">
+      {% for item in product.metafields["custom_fields"]["texture_small"] %}
+        <div class="fc-repeater-field-item fc-repeater-field-item--{{ forloop.index0 }} field__texture-small field-type--image">
+           <h4 class="custom-field--title">Texture_small</h4>
+           <div class="custom-field--value">
+             {{ item["texture_small"] }}
+           </div>
+        </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}
